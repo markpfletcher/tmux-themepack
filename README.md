@@ -14,6 +14,11 @@ A pack of various themes for Tmux.
 2. Source desired theme in your `~/.tmux.conf`:
 
         source-file "${HOME}/.tmux-themepack/powerline/block/green.tmuxtheme"
+    
+    In some linux distributions you might have to remove the quotation marks from the
+    `source-file` command to avoid a `no such file or directory` error:
+    
+        source-file ${HOME}/.tmux-themepack/powerline/block/green.tmuxtheme
 
 ### Install using [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
@@ -25,10 +30,11 @@ A pack of various themes for Tmux.
 
 You can pick and choose a theme via `.tmux.conf` option:
 
-- `set -g @themepack 'block/blue'` (default)
-- `set -g @themepack 'block/cyan'`
-- `set -g @themepack 'default/gray'`
-- `set -g @themepack 'double/megenta'`
+- `set -g @themepack 'basic'` (default)
+- `set -g @themepack 'powerline/block/blue'`
+- `set -g @themepack 'powerline/block/cyan'`
+- `set -g @themepack 'powerline/default/gray'`
+- `set -g @themepack 'powerline/double/magenta'`
 - `...`
 
 ## Themes
